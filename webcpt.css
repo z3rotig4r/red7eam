@@ -12,6 +12,16 @@ header {
     padding: 10px 0;
 }
 
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+
 nav ul {
     list-style-type: none;
     padding: 0;
