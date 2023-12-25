@@ -75,7 +75,8 @@ a:hover {
 .header-download {
     position: absolute;
     right: 10px;
-    bottom: 10px;
+    bottom: 20px;
+    padding: 10px;
 }
 
 .header-download a {
