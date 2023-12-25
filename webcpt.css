@@ -87,6 +87,12 @@ a:hover {
     border-radius: 5px;
     border: 1px solid transparent;
     transition: background-color 0.3s, color 0.3s;
+    display: inline-flex;
+    align-items: center;
+}
+
+.header-download a i {
+    margin-right: 5px;
 }
 
 .header-download a:hover {
