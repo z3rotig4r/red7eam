@@ -71,3 +71,24 @@ a:hover {
     text-decoration: underline;
 }
 
+.header-download {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.header-download a {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.header-download a:hover {
+    background-color: #0056b3;
+    border-color: #004080;
+}
+
