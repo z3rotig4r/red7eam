@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RED7eam Portfolio</title>
+    <title>RED7eam Portfolio Page</title>
     <link rel="stylesheet" href="webcpt.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
     <script src="page.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/highlight.min.js"></script>
 </head>
 <body>
     <header>
-        <h1>RED7eam Portfolio</h1>
+        <h1><a href="index.html">RED7eam Portfolio Page</a></h1>
         <nav>
             <ul>
                 <li><a href="#about">소개</a></li>
@@ -30,7 +32,7 @@
     <section id="about">
         <h2>소개</h2>
 	<p>육군 정보보호병으로 복무했던 5명으로 구성된 보안/개발 프로젝트 팀입니다.</p>
-    <p>팀 활동 기간
+    <p>[팀 활동 기간]
         <ul>
             <li>김민규 (~'24.01.17.)</li>
             <li>한승희 (~'24.03.18.)</li>
@@ -39,20 +41,44 @@
             <li>심형주 (~'24.09.19.)</li>
         </ul>
     </p>
-
+    <p>
+        [팀의 비전 및 목표]
+    </p>
+    <p>
+        [추구하는 가치]
+    </p>
+    <p>
+        [협업 방식]
+    </p>
     </section>
 
     <section id="projects">
         <h2>프로젝트</h2>
-        <p id="project1">프로젝트 1) Python 웹 크롤링을 이용한 공지사항 및 NAC 센서 DOWN 알림 프로그램 제작</p>
-        <p id="project2">프로젝트 2) 쉘파일 및 배치파일을 이용한 서버 백업 자동화 프로그램 제작</p>
-        <p id="project3">프로젝트 3) 자체 침해대응 훈련 진행(모의해킹) - C&C서버 구축 및 악성코드 제작</p>
+        <p id="project1"><span class="highlight">프로젝트 1) Python 웹 크롤링을 이용한 공지사항 및 NAC 센서 DOWN 알림 프로그램 제작</span></p>
+        <p id="project2"><span class="highlight">프로젝트 2) 쉘파일 및 배치파일 프로그래밍을 통한 서버 백업 자동화 프로그램 제작</span></p>
+        <p id="project3"><span class="highlight">프로젝트 3) 자체 침해대응 훈련 진행(모의해킹) - C&C서버 구축 및 악성코드 제작</span></p>
         <div class="downloader">
+            💾 프로젝트 보고서 다운로드 : 
             <a href="https://github.com/z3rotig4r/red7eam/raw/main/Sample.hwp" download="Sample.hwp">
                 <i class="fa fa-download"></i> CnC.hwp
             </a>
         </div>
-        <p id="project4">프로젝트 4) 서버 취약점 진단 및 조치</p>
+        <div class="contain">
+            Python flask를 이용해 C&C 서버를 구현하였다. C&C 웹서버와 감염 PC간의 주기적 통신을 발생시키고 서버에 OS Command를 입력해 감염 PC 레지스트리 조작 및 hosts.ics 조작 등 다양한 공격을 수행할 수 있었다. 밑은 예시 python 코드이다.
+            <pre><code class="language-python">
+import flask
+
+app=flask.Flask(__name__)
+
+@app.route('/')
+def index():
+    return "Running!"
+                
+if __name__ == '__main__':
+    app.run()
+            </code></pre>
+        </div>
+        <p id="project4"><span class="highlight">프로젝트 4) 서버 취약점 진단 및 조치</span></p>
     </section>
 
     <section id="contact">
@@ -101,5 +127,6 @@
     </footer>
 
     <script src="cptreport.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>
