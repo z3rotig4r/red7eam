@@ -26,6 +26,68 @@ nav ul li {
     color: white; 
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    margin-right: 15px;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.content {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* 모달 스타일 */
+.modal {
+    display: none; /* 기본적으로 모달을 숨깁니다. */
+    position: fixed; /* 모달을 화면 가운데에 위치시킵니다. */
+    z-index: 1; /* 모달을 최상위에 표시합니다. */
+    left: 0;
+    top: 0;
+    width: 100%; /* 전체 너비 */
+    height: 100%; /* 전체 높이 */
+    overflow: auto; /* 외부를 클릭하면 닫힙니다. */
+    background-color: rgb(0,0,0); /* 백그라운드 색상 */
+    background-color: rgba(0,0,0,0.4); /* 백그라운드 색상 투명도 */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 페이지 중앙에 위치 */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* 모달 너비 */
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 section {
     margin: 20px;
     padding: 20px;
