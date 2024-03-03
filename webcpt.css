@@ -52,6 +52,11 @@ tr:nth-child(even) {
     font-size: 1.1em;
 }
 
+.detail {
+    font-weight: lighter;
+    font-size: 0.5em;
+}
+
 /* 모달 스타일 */
 .modal {
     display: none; /* 기본적으로 모달을 숨깁니다. */
@@ -95,6 +100,49 @@ section {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     color: #333; 
+}
+
+.section-title {
+    font-size: 2em; 
+    color: #007bff; 
+    margin-bottom: 20px; /* 타이틀과 내용 사이의 공간 */
+    text-align: center; 
+}
+
+.value-content, .vision-content {
+    font-size: 1.1em;
+    line-height: 1.6; /* 줄 간격 */
+    color: #333; 
+    text-align: justify; /* 양쪽 맞춤 */
+    margin-bottom: 15px; /* 문단 간 간격 */
+}
+
+.info-card {
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    margin-bottom: 20px; 
+}
+
+.quote {
+    font-style: italic;
+    border-left: 4px solid #007bff; 
+    padding-left: 15px; 
+    margin: 20px 0; 
+}
+
+.button {
+    background-color: #007bff; /* 버튼 색상 */
+    color: #ffffff; /* 텍스트 색상 */
+    padding: 10px 20px; /* 여백 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    text-decoration: none; /* 밑줄 제거 */
+    display: inline-block; /* 인라인 블록 디스플레이 */
+    margin-top: 20px; /* 버튼 위의 마진 */
+}
+.button:hover {
+    background-color: #0056b3; /* 호버 상태 색상 */
 }
 
 ul {
